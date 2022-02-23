@@ -1,0 +1,221 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: var(--lightergray);
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container.compare {
+  flex-direction: row;
+}
+
+.model-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity-title {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--primary);
+  margin: 2rem 0 0 1rem;
+}
+
+.activity-description {
+  color: var(--primary);
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  margin: 0.5rem 0 2rem 0;
+  text-align: center;
+  width: 400px;
+}
+
+.activity-description.mv {
+  width: 70%;
+}
+
+.back-btn {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem 0.6rem;
+  border: none;
+  color: var(--primary);
+  margin: 1rem 0 0.5rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
+  outline: 0;
+  transition: 0.2s;
+  background-color: var(--secondary);
+}
+
+.back-btn:active {
+  transform: scale(0.9);
+}
+
+.back-btn.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+/* Model Viewer styles */
+model-viewer {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+model-viewer button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: orange;
+  box-sizing: border-box;
+}
+
+button[slot="hotspot-hand"] {
+  --min-hotspot-opacity: 0;
+  background-color: orange;
+}
+
+button[slot="hotspot-foot"] {
+  --min-hotspot-opacity: 0;
+  background-color: orange;
+}
+
+button[slot="hotspot-foot2"] {
+  --min-hotspot-opacity: 0;
+  background-color: orange;
+}
+
+.ar-button {
+  background-image: url(/assets/img/icon-ar2.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 12px 50%;
+  background-color: var(--secondary);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  padding: 0px 16px 0px 40px;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+  height: 36px;
+  width: 190px;
+  line-height: 36px;
+  border-radius: 5px;
+  box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+.ar-button:active {
+  background-color: #e8eaed;
+}
+
+.ar-button:focus {
+  outline: none;
+}
+
+.ar-button:focus-visible {
+  outline: 1px solid var(--primary);
+}
+
+.annotation {
+  background-color: var(--primary);
+  position: absolute;
+  transform: translate(10px, 10px);
+  border-radius: 10px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.annotation.left {
+  transform: translate(-100%, 10px);
+}
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  model-viewer {
+    width: 100vw;
+    height: 75vw;
+    margin: 0;
+  }
+  .container.compare {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .activity-description {
+    font-size: 1rem;
+    margin: 0.5rem 0 1.5rem 0;
+    text-align: center;
+    width: 70vw;
+  }
+
+  .back-btn {
+    font-size: 14px;
+    line-height: 36px;
+    height: 36px;
+    width: 190px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .activity-description {
+    font-size: 0.8rem;
+    margin: 1rem;
+  }
+
+  .back-btn {
+    margin: 1rem 0 0rem 0;
+  }
+}
