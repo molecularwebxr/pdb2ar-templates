@@ -66,7 +66,10 @@ Navigate to http://127.0.0.1:8080/cube-ar/ for AR.js app.
 Please keep in mind that this setup will allow you to run the project locally in your computer. If you want to try it in your mobile phone or VR headset you will need to run a server under HTTPS. 
 
 
+## Credits
+This project was possible thanks to the amazing community behind [Three.js](https://threejs.org/), [AR.js](https://ar-js-org.github.io/AR.js-Docs/), [model-viewer](https://modelviewer.dev/) and WebXR community.
+
 
 This project is manintained by [Fabio Cortés](https://www.fjcr.pro/) and [Luciano Abriata](http://labriataphd.altervista.org/) from the [Laboratory of Biomolecular Modeling](https://www.epfl.ch/labs/lbm/) at [École Polytechnique Fédérale de Lausanne (EPFL)](https://www.epfl.ch/) in Switzerland.
 
-
+See the [LICENSE](LICENSE) for details.
