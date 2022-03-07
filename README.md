@@ -72,4 +72,6 @@ This project was possible thanks to the amazing community behind [Three.js](http
 
 This project is manintained by [Fabio Cortés](https://www.fjcr.pro/) and [Luciano Abriata](http://labriataphd.altervista.org/) from the [Laboratory of Biomolecular Modeling](https://www.epfl.ch/labs/lbm/) at [École Polytechnique Fédérale de Lausanne (EPFL)](https://www.epfl.ch/) in Switzerland.
 
+This work was funded by Agora grant CRARP2_202370 from the [Swiss National Science Foundation](https://www.snf.ch/fr) and grant number 21033 from the [Hasler Foundation](https://haslerstiftung.ch/en/welcome-to-the-hasler-foundation/) to LAA.
+
 See the [LICENSE](LICENSE) for details.
